@@ -3,6 +3,7 @@ import { Plus } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
+  SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
@@ -18,7 +19,10 @@ export function AppSidebar() {
             <span className="text-xl font-bold">YouLearn</span>
           </SidebarGroupLabel>
           <SidebarContent>
-            <Button className="dark:bg-[#222222] dark:text-[#f9f9f9] outline-dashed outline-2 px-2 -outline-offset-2 outline-slate-100/25 rounded-xl flex items-center justify-start font-medium">
+            <Button
+              variant={"dashed"}
+              className="dark:bg-[#222222] dark:text-[#f9f9f9] outline-dashed outline-2 px-2 -outline-offset-2 outline-slate-100/25 rounded-xl flex items-center justify-start font-medium"
+            >
               <Plus className="w-8 h-8 text-gray-100" />
               Add content
             </Button>
@@ -43,6 +47,17 @@ export function AppSidebar() {
             </p>
           </SidebarGroupContent>
         </SidebarGroup>
+
+        <SidebarFooter className="bottom-8 absolute w-full">
+          <SidebarContent>
+            <p className="text-center text-sm text-slate-100/50">
+              Sign in to continue
+            </p>
+            <Button className="bg-[#f9f9f9]">
+              Sign in
+            </Button>
+          </SidebarContent>
+        </SidebarFooter>
       </SidebarContent>
     </Sidebar>
   );

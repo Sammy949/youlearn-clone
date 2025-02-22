@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 
 import { ThemeProvider } from "@/components/theme-provider";
@@ -30,13 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#121212] p-4 w-full`}
+        suppressHydrationWarning
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#121212] p-4 min-h-[1000px]`}
       >
         <SidebarProvider>
           <AppSidebar />
-          <main>
-            <SidebarTrigger className="dark:text-white" />
-
+          <main className="w-full">
             <ThemeProvider
               attribute="class"
               defaultTheme="system"
