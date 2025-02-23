@@ -9,6 +9,7 @@ import {
   SidebarGroupLabel,
 } from "@/components/ui/sidebar";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 export function AppSidebar() {
   return (
@@ -16,7 +17,7 @@ export function AppSidebar() {
       <SidebarContent>
         <SidebarGroup className="px-2 py-4">
           <SidebarGroupLabel className="mb-4">
-            <span className="text-xl font-bold">YouLearn</span>
+            <Image src="/cloudnotte-logo.png" width={150} height={60} alt="Cloudnotte logo"/>
           </SidebarGroupLabel>
           <SidebarContent>
             <Button
