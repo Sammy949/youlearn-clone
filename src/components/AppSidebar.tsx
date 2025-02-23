@@ -17,7 +17,7 @@ export function AppSidebar() {
       <SidebarContent>
         <SidebarGroup className="px-2 py-4">
           <SidebarGroupLabel className="mb-4">
-            <Image src="/cloudnotte-logo.png" width={50} height={20} alt="Cloudnotte logo"/>
+            <Image src="/cloudnotte-logo.png" width={200} height={80} alt="Cloudnotte logo"/>
           </SidebarGroupLabel>
           <SidebarContent>
             <Button
