@@ -9,7 +9,7 @@ import {
 
 import { Button } from "./ui/button";
 import { SidebarTrigger } from "./ui/sidebar";
-import ModeToggle from "./mode-toggle"
+import { ModeToggle } from "./mode-toggle"
 
 const Navbar = () => {
   return (
