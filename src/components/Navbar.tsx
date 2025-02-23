@@ -9,6 +9,7 @@ import {
 
 import { Button } from "./ui/button";
 import { SidebarTrigger } from "./ui/sidebar";
+import ModeToggle from "./mode-toggle"
 
 const Navbar = () => {
   return (
@@ -30,6 +31,7 @@ const Navbar = () => {
           </SelectContent>
         </Select>
         <Button>Sign in</Button>
+        <ModeToggle />
       </div>
     </nav>
   );
